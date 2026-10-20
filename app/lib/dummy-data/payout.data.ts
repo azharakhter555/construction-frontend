@@ -1,0 +1,348 @@
+// lib/dummy-data/payout.data.ts
+import type { PayoutRow, PayoutKpis } from "@/types/payout.types";
+
+export const dummyPayoutRows: PayoutRow[] = [
+  {
+    id: "p-0001",
+    reference: "PO-2026-09-0001",
+    instructor: {
+      id: "cd6eb38e-4260-45f3-8ed7-9ab9f64fb4df",
+      firstName: "azhar",
+      lastName: "akhter",
+      email: "akhterazhar846@gmail.com",
+      avatarUrl: null,
+    },
+    county: "Dublin",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 1890,
+    commissionAmount: 226.8,
+    netAmount: 1663.2,
+    status: "paid",
+    method: "bank_transfer",
+    paidAt: "2026-10-02T10:15:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: "Monthly payout — September.",
+  },
+  {
+    id: "p-0002",
+    reference: "PO-2026-09-0002",
+    instructor: {
+      id: "8ffccd1f-37c8-495c-b69a-116c28592790",
+      firstName: "instructer",
+      lastName: "demo",
+      email: "instructor@gmail.com",
+      avatarUrl: null,
+    },
+    county: "Cork",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 3060,
+    commissionAmount: 459,
+    netAmount: 2601,
+    status: "paid",
+    method: "stripe",
+    paidAt: "2026-10-02T10:20:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0003",
+    reference: "PO-2026-09-0003",
+    instructor: {
+      id: "b1c2d3e4-f5a6-4789-9abc-def012345678",
+      firstName: "sarah",
+      lastName: "murphy",
+      email: "sarah.murphy@example.ie",
+      avatarUrl: null,
+    },
+    county: "Galway",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 880,
+    commissionAmount: 158.4,
+    netAmount: 721.6,
+    status: "processing",
+    method: "paypal",
+    paidAt: null,
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: "Awaiting PayPal confirmation.",
+  },
+  {
+    id: "p-0004",
+    reference: "PO-2026-09-0004",
+    instructor: {
+      id: "e0f1a2b3-c4d5-4678-9abc-def012345678",
+      firstName: "liam",
+      lastName: "oconnor",
+      email: "liam.oconnor@example.ie",
+      avatarUrl: null,
+    },
+    county: "Limerick",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 1530,
+    commissionAmount: 408,
+    netAmount: 1122,
+    status: "failed",
+    method: "bank_transfer",
+    paidAt: null,
+    failureReason: "IBAN rejected by bank — please verify account details.",
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0005",
+    reference: "PO-2026-09-0005",
+    instructor: {
+      id: "abcdef01-2345-6789-abcd-ef0123456789",
+      firstName: "emma",
+      lastName: "byrne",
+      email: "emma.byrne@example.ie",
+      avatarUrl: null,
+    },
+    county: "Dublin",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 2520,
+    commissionAmount: 378,
+    netAmount: 2142,
+    status: "paid",
+    method: "bank_transfer",
+    paidAt: "2026-10-02T10:25:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0006",
+    reference: "PO-2026-09-0006",
+    instructor: {
+      id: "fedcba98-7654-3210-fedc-ba9876543210",
+      firstName: "niamh",
+      lastName: "kelly",
+      email: "niamh.kelly@example.ie",
+      avatarUrl: null,
+    },
+    county: "Waterford",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 560,
+    commissionAmount: 56,
+    netAmount: 504,
+    status: "pending",
+    method: "bank_transfer",
+    paidAt: null,
+    failureReason: null,
+    processedBy: null,
+    invoiceUrl: null,
+    note: "Scheduled for Oct 2 batch.",
+  },
+  {
+    id: "p-0007",
+    reference: "PO-2026-09-0007",
+    instructor: {
+      id: "11110000-2222-3333-4444-555566667777",
+      firstName: "paddy",
+      lastName: "doyle",
+      email: "paddy.doyle@example.ie",
+      avatarUrl: null,
+    },
+    county: "Kerry",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 2160,
+    commissionAmount: 324,
+    netAmount: 1836,
+    status: "paid",
+    method: "stripe",
+    paidAt: "2026-10-02T10:30:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0008",
+    reference: "PO-2026-09-0008",
+    instructor: {
+      id: "22223333-4444-5555-6666-777788889999",
+      firstName: "aoife",
+      lastName: "ryan",
+      email: "aoife.ryan@example.ie",
+      avatarUrl: null,
+    },
+    county: "Tipperary",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 1350,
+    commissionAmount: 189,
+    netAmount: 1161,
+    status: "paid",
+    method: "paypal",
+    paidAt: "2026-10-02T10:35:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0009",
+    reference: "PO-2026-09-0009",
+    instructor: {
+      id: "33334444-5555-6666-7777-888899990000",
+      firstName: "sean",
+      lastName: "walsh",
+      email: "sean.walsh@example.ie",
+      avatarUrl: null,
+    },
+    county: "Mayo",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 3690,
+    commissionAmount: 405.9,
+    netAmount: 3284.1,
+    status: "paid",
+    method: "bank_transfer",
+    paidAt: "2026-10-02T10:40:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: "Top earner this month.",
+  },
+  {
+    id: "p-0010",
+    reference: "PO-2026-09-0010",
+    instructor: {
+      id: "44445555-6666-7777-8888-999900001111",
+      firstName: "ciara",
+      lastName: "gallagher",
+      email: "ciara.gallagher@example.ie",
+      avatarUrl: null,
+    },
+    county: "Donegal",
+    periodStart: "2026-09-01T00:00:00.000Z",
+    periodEnd: "2026-09-30T23:59:59.999Z",
+    grossAmount: 1800,
+    commissionAmount: 270,
+    netAmount: 1530,
+    status: "pending",
+    method: "bank_transfer",
+    paidAt: null,
+    failureReason: null,
+    processedBy: null,
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0011",
+    reference: "PO-2026-08-0011",
+    instructor: {
+      id: "cd6eb38e-4260-45f3-8ed7-9ab9f64fb4df",
+      firstName: "azhar",
+      lastName: "akhter",
+      email: "akhterazhar846@gmail.com",
+      avatarUrl: null,
+    },
+    county: "Dublin",
+    periodStart: "2026-08-01T00:00:00.000Z",
+    periodEnd: "2026-08-31T23:59:59.999Z",
+    grossAmount: 1720,
+    commissionAmount: 206.4,
+    netAmount: 1513.6,
+    status: "paid",
+    method: "bank_transfer",
+    paidAt: "2026-09-02T09:10:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+  {
+    id: "p-0012",
+    reference: "PO-2026-08-0012",
+    instructor: {
+      id: "8ffccd1f-37c8-495c-b69a-116c28592790",
+      firstName: "instructer",
+      lastName: "demo",
+      email: "instructor@gmail.com",
+      avatarUrl: null,
+    },
+    county: "Cork",
+    periodStart: "2026-08-01T00:00:00.000Z",
+    periodEnd: "2026-08-31T23:59:59.999Z",
+    grossAmount: 2880,
+    commissionAmount: 432,
+    netAmount: 2448,
+    status: "paid",
+    method: "stripe",
+    paidAt: "2026-09-02T09:15:00.000Z",
+    failureReason: null,
+    processedBy: "Admin",
+    invoiceUrl: null,
+    note: null,
+  },
+];
+
+// ── KPIs ──
+
+export function computePayoutKpis(rows: PayoutRow[]): PayoutKpis {
+  if (rows.length === 0) {
+    return {
+      totalPayouts: 0,
+      paidThisMonth: 0,
+      pendingAmount: 0,
+      failedCount: 0,
+      totalPaidAllTime: 0,
+      averagePayout: 0,
+      topRecipient: null,
+    };
+  }
+
+  const now = new Date();
+  const thisMonth = rows.filter((r) => {
+    const d = r.paidAt ? new Date(r.paidAt) : null;
+    return (
+      d && d.getUTCFullYear() === now.getUTCFullYear() && d.getUTCMonth() === now.getUTCMonth()
+    );
+  });
+
+  const paidThisMonth = thisMonth.reduce((n, r) => n + r.netAmount, 0);
+  const pendingAmount = rows
+    .filter((r) => r.status === "pending" || r.status === "processing")
+    .reduce((n, r) => n + r.netAmount, 0);
+  const failedCount = rows.filter((r) => r.status === "failed").length;
+  const totalPaidAllTime = rows
+    .filter((r) => r.status === "paid")
+    .reduce((n, r) => n + r.netAmount, 0);
+  const paidRows = rows.filter((r) => r.status === "paid");
+  const averagePayout =
+    paidRows.length > 0 ? paidRows.reduce((n, r) => n + r.netAmount, 0) / paidRows.length : 0;
+
+  const top = [...rows].sort((a, b) => b.netAmount - a.netAmount)[0];
+
+  return {
+    totalPayouts: rows.length,
+    paidThisMonth: Number(paidThisMonth.toFixed(2)),
+    pendingAmount: Number(pendingAmount.toFixed(2)),
+    failedCount,
+    totalPaidAllTime: Number(totalPaidAllTime.toFixed(2)),
+    averagePayout: Number(averagePayout.toFixed(2)),
+    topRecipient: top
+      ? {
+          name: `${top.instructor.firstName} ${top.instructor.lastName}`,
+          amount: top.netAmount,
+        }
+      : null,
+  };
+}
+
+export const dummyPayoutKpis = computePayoutKpis(dummyPayoutRows);

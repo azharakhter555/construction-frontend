@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%" style="background-color: #0b192c;">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D06B" />
+      <stop offset="50%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#9A7B1C" />
+    </linearGradient>
+    
+    <!-- Gold Gradient for Star Facets -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="100%" stop-color="#C59B27" />
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A27E1E" />
+      <stop offset="100%" stop-color="#684F0C" />
+    </linearGradient>
+  </defs>
+
+  <!-- ROOF & HOUSE STRUCTURE -->
+  <g>
+    <!-- Outer Dark Navy Roof Line (Converted to White for Light Mode) -->
+    <path d="M 400 75 L 210 215 L 250 215 L 250 325 L 280 325 L 280 162 L 400 75 Z" fill="#FFFFFF" />
+    <path d="M 400 75 L 590 215 L 550 215 L 550 325 L 520 325 L 520 120 L 480 120 L 480 133 L 400 75 Z" fill="#FFFFFF" />
+    <polygon points="400,75 210,215 250,245 400,135 550,245 590,215" fill="#FFFFFF" />
+    <!-- Wall Pillars -->
+    <rect x="250" y="220" width="30" height="105" fill="#FFFFFF" />
+    <rect x="520" y="220" width="30" height="105" fill="#FFFFFF" />
+    <!-- Chimney -->
+    <rect x="488" y="100" width="28" height="40" fill="#FFFFFF" />
+
+    <!-- Inner Gold Roof Arch -->
+    <path d="M 400 135 L 280 225 L 290 235 L 400 153 L 510 235 L 520 225 Z" fill="url(#goldGrad)" />
+
+    <!-- 4-Pane Window -->
+    <g fill="#FFFFFF">
+      <rect x="370" y="152" width="26" height="26" rx="2" />
+      <rect x="404" y="152" width="26" height="26" rx="2" />
+      <rect x="370" y="186" width="26" height="26" rx="2" />
+      <rect x="404" y="186" width="26" height="26" rx="2" />
+    </g>
+  </g>
+
+  <!-- 3D GOLD STAR -->
+  <g transform="translate(400, 260) scale(1.1)">
+    <!-- Point 1 (Top) -->
+    <polygon points="0,0 0,-48 14,-14" fill="url(#goldLight)" />
+    <polygon points="0,0 0,-48 -14,-14" fill="url(#goldDark)" />
+    <!-- Point 2 (Right) -->
+    <polygon points="0,0 46,-15 14,-14" fill="url(#goldDark)" />
+    <polygon points="0,0 46,-15 23,17" fill="url(#goldLight)" />
+    <!-- Point 3 (Bottom Right) -->
+    <polygon points="0,0 28,39 23,17" fill="url(#goldDark)" />
+    <polygon points="0,0 28,39 0,22" fill="url(#goldLight)" />
+    <!-- Point 4 (Bottom Left) -->
+    <polygon points="0,0 -28,39 0,22" fill="url(#goldDark)" />
+    <polygon points="0,0 -28,39 -23,17" fill="url(#goldLight)" />
+    <!-- Point 5 (Left) -->
+    <polygon points="0,0 -46,-15 -23,17" fill="url(#goldDark)" />
+    <polygon points="0,0 -46,-15 -14,-14" fill="url(#goldLight)" />
+  </g>
+
+  <!-- BRAND NAME TEXT -->
+  <text x="70" y="420" font-family="&#39;Arial Black&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-weight="900" font-size="92" fill="#FFFFFF" letter-spacing="-1">FIVE</text>
+  <text x="375" y="420" font-family="&#39;Arial Black&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-weight="900" font-size="92" fill="url(#goldGrad)" letter-spacing="-1">STAR</text>
+
+  <!-- SUBTITLE TEXT -->
+  <text x="400" y="475" font-family="&#39;Arial&#39;, &#39;Helvetica&#39;, sans-serif" font-weight="800" font-size="33" fill="#FFFFFF" text-anchor="middle" letter-spacing="4.5">PROPERTY MAINTENANCE</text>
+
+  <!-- ICON ROW -->
+  <g transform="translate(0, 520)">
+    <!-- 1. Repairs -->
+    <g transform="translate(100, 0)">
+      <path d="M12 22 L26 8 C28 6 32 6 34 8 L36 10 C38 12 38 16 36 18 L22 32 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M10 24 L2 32 L8 38 L16 30" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      <text x="20" y="55" font-family="&#39;Arial&#39;, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">REPAIRS</text>
+    </g>
+
+    <circle cx="215" cy="535" r="3" fill="#FFFFFF" />
+
+    <!-- 2. Renovations -->
+    <g transform="translate(265, -5)">
+      <rect x="5" y="5" width="28" height="14" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M19 19 L19 28 L14 28 L14 36 L24 36 L24 28 L19 28" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
+      <text x="20" y="60" font-family="&#39;Arial&#39;, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">RENOVATIONS</text>
+    </g>
+
+    <circle cx="410" cy="535" r="3" fill="#FFFFFF" />
+
+    <!-- 3. Property Care -->
+    <g transform="translate(465, -8)">
+      <path d="M5 20 L20 6 L35 20 L35 36 L5 36 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
+      <rect x="14" y="24" width="12" height="12" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+      <text x="20" y="63" font-family="&#39;Arial&#39;, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PROPERTY CARE</text>
+    </g>
+
+    <circle cx="605" cy="535" r="3" fill="#FFFFFF" />
+
+    <!-- 4. Peace of Mind -->
+    <g transform="translate(650, -8)">
+      <path d="M6 8 C16 8 20 2 20 2 C20 2 24 8 34 8 C34 22 26 34 20 37 C14 34 6 22 6 8 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
+      <path d="M13 18 L18 23 L27 13" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="20" y="63" font-family="&#39;Arial&#39;, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PEACE OF MIND</text>
+    </g>
+  </g>
+
+  <!-- WEBSITE FOOTER -->
+  <text x="400" y="620" font-family="&#39;Arial&#39;, sans-serif" font-weight="400" font-size="16" fill="#8A99AD" text-anchor="middle" letter-spacing="2">www.fivestarpm.com</text>
+</svg>

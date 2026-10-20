@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Strict Type-Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    /* Modules */
+    "moduleDetection": "force",
+    // "baseUrl": ".",
+    "rootDir": ".",
+
+    /* Path Mapping */
+    "paths": {
+      "@/*": ["./app/*"] // ✅ CORRECT! Maps @/ to src folder
+      // "@components/*": ["app/components/*"],
+      // "@lib/*": ["app/lib/*"],
+      // "@hooks/*": ["app/hooks/*"],
+      // "@stores/*": ["app/stores/*"],
+      // "@types/*": ["app/types/*"],
+      // "@styles/*": ["app/styles/*"],
+      // "@config/*": ["app/config/*"],
+      // "@features/*": ["app/components/features/*"],
+      // "@public/*": ["app/public/*"]
+    },
+
+    /* JavaScript Support */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": false,
+
+    /* Emit */
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+
+    /* Completeness */
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+
+    /* Language and Environment */
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+
+    /* Decorators */
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
+
+    /* Advanced */
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "preserveConstEnums": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* Plugins */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+
+  /* Include/Exclude */
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "build",
+    "coverage",
+    ".turbo",
+    ".vercel",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/__tests__/**",
+    "**/__mocks__/**"
+  ],
+
+  /* References (for monorepo) */
+  "references": []
+}

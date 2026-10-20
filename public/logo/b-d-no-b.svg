@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D06B"/>
+      <stop offset="50%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#9A7B1C"/>
+    </linearGradient>
+    <!-- Gold Gradient for Star Facets -->
+    <linearGradient id="goldFacetLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885"/>
+      <stop offset="100%" stop-color="#C59B27"/>
+    </linearGradient>
+    <linearGradient id="goldFacetDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A27E1E"/>
+      <stop offset="100%" stop-color="#684F0C"/>
+    </linearGradient>
+  </defs>
+  <!-- HOUSE STRUCTURE -->
+  <g>
+    <!-- Roof Line & Walls -->
+    <path d="M 400 50 L 210 190 L 250 190 L 250 300 L 280 300 L 280 137 L 400 50 Z" fill="#FFFFFF"/>
+    <path d="M 400 50 L 590 190 L 550 190 L 550 300 L 520 300 L 520 95 L 480 95 L 480 108 L 400 50 Z" fill="#FFFFFF"/>
+    <polygon points="400,50 210,190 250,220 400,110 550,220 590,190" fill="#FFFFFF"/>
+    <rect x="250" y="195" width="30" height="105" fill="#FFFFFF"/>
+    <rect x="520" y="195" width="30" height="105" fill="#FFFFFF"/>
+    <rect x="488" y="75" width="28" height="40" fill="#FFFFFF"/>
+    <!-- Inner Gold Roof Arch -->
+    <path d="M 400 110 L 280 200 L 290 210 L 400 128 L 510 210 L 520 200 Z" fill="url(#goldGradLight)"/>
+    <!-- 4-Pane Window -->
+    <g fill="#FFFFFF">
+      <rect x="370" y="127" width="26" height="26" rx="2"/>
+      <rect x="404" y="127" width="26" height="26" rx="2"/>
+      <rect x="370" y="161" width="26" height="26" rx="2"/>
+      <rect x="404" y="161" width="26" height="26" rx="2"/>
+    </g>
+  </g>
+  <!-- 3D GOLD STAR (CENTERED IN HOUSE) -->
+  <g transform="translate(400, 235) scale(1.1)">
+    <!-- Point 1 (Top) -->
+    <polygon points="0,0 0,-48 14,-14" fill="url(#goldFacetLight)"/>
+    <polygon points="0,0 0,-48 -14,-14" fill="url(#goldFacetDark)"/>
+    <!-- Point 2 (Right) -->
+    <polygon points="0,0 46,-15 14,-14" fill="url(#goldFacetDark)"/>
+    <polygon points="0,0 46,-15 23,17" fill="url(#goldFacetLight)"/>
+    <!-- Point 3 (Bottom Right) -->
+    <polygon points="0,0 28,39 23,17" fill="url(#goldFacetDark)"/>
+    <polygon points="0,0 28,39 0,22" fill="url(#goldFacetLight)"/>
+    <!-- Point 4 (Bottom Left) -->
+    <polygon points="0,0 -28,39 0,22" fill="url(#goldFacetDark)"/>
+    <polygon points="0,0 -28,39 -23,17" fill="url(#goldFacetLight)"/>
+    <!-- Point 5 (Left) -->
+    <polygon points="0,0 -46,-15 -23,17" fill="url(#goldFacetDark)"/>
+    <polygon points="0,0 -46,-15 -14,-14" fill="url(#goldFacetLight)"/>
+  </g>
+  <!-- CENTERED BRAND NAME TEXT (FIVESTAR) -->
+  <g font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="92" letter-spacing="-1" text-anchor="middle">
+    <text x="400" y="400">
+      <tspan fill="#FFFFFF">FIVE</tspan><tspan fill="url(#goldGradLight)">STAR</tspan>
+    </text>
+  </g>
+  <!-- SUBTITLE TEXT -->
+  <text x="400" y="455" font-family="'Arial', 'Helvetica', sans-serif" font-weight="800" font-size="32" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">PROPERTY MAINTENANCE</text>
+</svg>
