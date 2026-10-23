@@ -34,49 +34,49 @@ export function Footer() {
 
       <div className="mx-auto max-w-6xl px-6 py-14">
         {/* ============ MAIN GRID ============ */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-2 md:text-left lg:grid-cols-4 lg:gap-12">
           {/* ---------- Brand / About ---------- */}
           <div className="space-y-4 lg:col-span-2">
-            {/* Logo (light version — footer is always navy) */}
+            {/* Logo — centered on mobile */}
             <Link
               href="/"
-              aria-label="Paddy Kehoe Suspended Ceilings — Home"
-              className="inline-block"
+              aria-label="Five Star Property Maintenance — Home"
+              className="inline-block mx-auto md:mx-0"
             >
               <Image
                 src="/logo/b-d-no-b.svg"
-                alt="Paddy Kehoe Suspended Ceilings"
+                alt="Five Star Property Maintenance"
                 width={300}
                 height={80}
-                className="h-40 w-auto max-w-[400px] object-contain"
+                className="h-32 w-auto max-w-[320px] object-contain md:h-40 md:max-w-[400px]"
               />
             </Link>
 
-            {/* Contact quick links */}
+            {/* Contact quick links — centered on mobile */}
             <ul className="space-y-2 pt-2 text-sm">
-              <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-secondary" />
+              <li className="flex items-center justify-center gap-3 md:justify-start">
+                <Phone className="h-4 w-4 text-secondary shrink-0" />
                 <a href="tel:+353851181111" className="transition-colors hover:text-white">
                   085 118 1111
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-secondary" />
+              <li className="flex items-center justify-center gap-3 md:justify-start">
+                <Mail className="h-4 w-4 text-secondary shrink-0" />
                 <a
-                  href="mailto:info@paddykehoeceilings.ie"
+                  href="mailto:info@dublinceillings.ie"
                   className="transition-colors hover:text-white"
                 >
-                  info@paddykehoeceilings.ie
+                  info@dublinceillings.ie
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <MapPin className="h-4 w-4 text-secondary" />
+              <li className="flex items-center justify-center gap-3 md:justify-start">
+                <MapPin className="h-4 w-4 text-secondary shrink-0" />
                 <span>Dublin, Kildare &amp; surrounding areas</span>
               </li>
             </ul>
 
-            {/* Social */}
-            <div className="flex gap-3 pt-3">
+            {/* Social — centered on mobile */}
+            <div className="flex justify-center gap-3 pt-3 md:justify-start">
               {[
                 { icon: Facebook, label: "Facebook", href: "#" },
                 { icon: Instagram, label: "Instagram", href: "#" },
@@ -106,7 +106,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="group inline-flex items-center gap-2 transition-colors hover:text-white"
+                    className="group inline-flex items-center justify-center gap-2 transition-colors hover:text-white md:justify-start"
                   >
                     <span className="h-1 w-0 rounded-full bg-secondary transition-all duration-300 group-hover:w-3" />
                     {link.label}
@@ -126,7 +126,7 @@ export function Footer() {
                 <li key={service.href}>
                   <Link
                     href={service.href}
-                    className="group inline-flex items-center gap-2 transition-colors hover:text-white"
+                    className="group inline-flex items-center justify-center gap-2 transition-colors hover:text-white md:justify-start"
                   >
                     <span className="h-1 w-0 rounded-full bg-secondary transition-all duration-300 group-hover:w-3" />
                     {service.label}
@@ -139,9 +139,9 @@ export function Footer() {
 
         {/* ============ OPENING HOURS + CTA ============ */}
         <div className="mt-12 grid grid-cols-1 gap-6 border-t border-white/10 pt-8 text-sm md:grid-cols-2">
-          <div className="flex items-start gap-3">
+          <div className="flex items-start justify-center gap-3 md:justify-start">
             <Clock className="mt-0.5 h-4 w-4 shrink-0 text-secondary" />
-            <div>
+            <div className="text-center md:text-left">
               <p className="font-semibold text-white">Opening Hours</p>
               <p className="text-white/60">Monday – Friday: 8am – 6pm</p>
               <p className="text-white/60">Saturday: 9am – 2pm</p>
@@ -149,7 +149,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex items-center md:justify-end">
+          <div className="flex items-center justify-center md:justify-end">
             <a
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-[#0A2946]
@@ -165,7 +165,7 @@ export function Footer() {
 
         {/* ============ BOTTOM BAR ============ */}
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/50">
-          <p>© {new Date().getFullYear()} Paddy Kehoe Suspended Ceilings. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Five Star Property Maintenance. All rights reserved.</p>
           <p className="mt-1 inline-flex items-center gap-1">
             Designed with <Heart className="h-3 w-3 fill-secondary text-secondary" /> in Dublin
           </p>

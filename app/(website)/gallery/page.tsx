@@ -78,7 +78,7 @@ export default function GalleryPage() {
         title='Recent <span class="text-secondary">Projects</span> Across Dublin'
         description="A selection of suspended ceiling and partition projects we've completed across Dublin, Kildare and Ireland. Every job finished to the same high standard — from single-room installs to full commercial fit-outs."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Gallery" }]}
-        image="/assets/pic1.jpg"
+        image="/assets/22.jpg"
         ctaLabel="Get a Free Quote"
         ctaHref="/contact"
         secondaryCtaLabel="Talk to Our Team"

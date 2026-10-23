@@ -21,14 +21,12 @@ interface ServicesSectionProps {
   subheading?: string;
   services?: Service[];
   className?: string;
-  /** WhatsApp number in international format, digits only (e.g. 353870000000) */
   whatsappNumber?: string;
-  /** Optional global message appended to the per-service message */
   whatsappMessage?: string;
 }
 
 // ------------------------------------------------------------------
-// WhatsApp icon (inline SVG — lucide-react doesn't ship the brand logo)
+// WhatsApp icon
 // ------------------------------------------------------------------
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -70,20 +68,24 @@ export function ServicesSection({
           >
             ⭐ {subheading}
           </span>
+
+          {/* Heading — ceilings only */}
           <h2
             className="text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl
             animate-in fade-in slide-in-from-bottom-6 duration-700 delay-150 fill-mode-both"
           >
-            Our Specialist Ceiling &amp; Partition <span className="text-secondary">Services</span>{" "}
-            in Dublin
+            Our Specialist Ceiling <span className="text-secondary">Services</span> in Dublin
           </h2>
+
           <p
-            className="mt-4 text-base text-muted-foreground md:text-lg
+            className="mt-4 text-base text-muted-foreground dark:text-gray-100 md:text-lg
             animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both"
           >
-            Paddy Kehoe Suspended Ceilings provides comprehensive partition and ceiling solutions
-            for commercial spaces throughout Dublin and Ireland. Our specialist services are
-            designed to meet the highest standards of quality, safety and compliance.
+            Five Star Property Maintenance specialise in suspended ceiling installation and
+            commercial ceiling repairs across Dublin and Ireland — from standard grid systems to
+            bespoke plasterboard and feature ceilings. We also install fire-rated office partitions
+            and provide certified fire sealing, all to the highest standards of quality, safety and
+            compliance.
           </p>
         </div>
 
@@ -107,7 +109,6 @@ export function ServicesSection({
                 animate-in fade-in slide-in-from-bottom-8 duration-700 fill-mode-both"
                 style={{ animationDelay: `${400 + i * 120}ms` }}
               >
-                {/* Full-card click-through to the service page */}
                 <Link
                   href={service.href}
                   aria-label={`View ${service.label}`}
@@ -124,10 +125,8 @@ export function ServicesSection({
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
 
-                  {/* Navy gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A2946] via-[#0A2946]/40 to-transparent opacity-90" />
 
-                  {/* Gold number badge */}
                   <div className="absolute left-5 top-5">
                     <span
                       className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-sm font-bold text-[#0A2946]
@@ -138,7 +137,6 @@ export function ServicesSection({
                     </span>
                   </div>
 
-                  {/* Tagline + title */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-secondary">
                       {service.tagline}
@@ -148,19 +146,16 @@ export function ServicesSection({
                     </h3>
                   </div>
 
-                  {/* Gold underline grows on hover */}
                   <div className="absolute bottom-0 left-0 h-1 w-0 bg-secondary transition-all duration-500 group-hover:w-full" />
                 </div>
 
                 {/* ---- CONTENT ---- */}
                 <div className="flex flex-1 flex-col p-6 md:p-7">
-                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground dark:text-gray-300">
                     {service.description}
                   </p>
 
-                  {/* CTA row: Learn More + WhatsApp */}
                   <div className="mt-auto flex items-center justify-between gap-3">
-                    {/* Learn More (visual — the whole card is a Link) */}
                     <div className="flex items-center gap-3 text-primary transition-colors group-hover:text-secondary">
                       <span className="text-sm font-semibold tracking-wide">Learn More</span>
                       <span
@@ -172,7 +167,6 @@ export function ServicesSection({
                       </span>
                     </div>
 
-                    {/* WhatsApp button — sits ABOVE the card link */}
                     <a
                       href={waHref}
                       target="_blank"

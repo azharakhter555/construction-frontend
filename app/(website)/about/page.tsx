@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/sections/PageHero";
-import { VideoFeature } from "../../components/sections/DrivingLessons";
+// import { VideoFeature } from "@/components/sections/VideoFeature";
 import { FAQSection } from "@/components/sections/FAQSection";
 import {
   CheckCircle2,
@@ -20,10 +20,10 @@ import {
 // Stats
 // ------------------------------------------------------------------
 const stats = [
-  { value: "30+", label: "Years Experience" },
   { value: "500+", label: "Projects Completed" },
   { value: "4.9★", label: "Average Rating" },
   { value: "100%", label: "Fully Insured" },
+  { value: "48h", label: "Quote Turnaround" },
 ];
 
 // ------------------------------------------------------------------
@@ -92,9 +92,9 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title='Dublin&apos;s Trusted <span class="text-secondary">Suspended Ceiling</span> Specialists'
-        description="Paddy Kehoe Suspended Ceilings has been fitting ceilings and partitions across Dublin and Ireland for over three decades. Known for excellent workmanship, honest pricing, and a clean finish every time."
+        description="Five Star Property Maintenance are specialists in suspended ceiling installation and commercial ceiling repairs across Dublin and Ireland. Known for excellent workmanship, honest pricing, and a clean finish — from single office ceilings to full commercial fit-outs."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
-        image="/assets/pic1.jpg"
+        image="/assets/pic44.jpg"
         ctaLabel="Get a Free Quote"
         ctaHref="/contact"
         secondaryCtaLabel="View Our Work"
@@ -104,7 +104,6 @@ export default function AboutPage() {
 
       {/* ============ STORY ============ */}
       <section className="relative overflow-hidden bg-background px-6 py-24">
-        {/* Ambient gold glows */}
         <div
           aria-hidden
           className="pointer-events-none absolute -top-40 -right-40 h-[520px] w-[520px] rounded-full bg-secondary/10 blur-[140px]"
@@ -138,10 +137,10 @@ export default function AboutPage() {
                 className="text-lg leading-relaxed text-muted-foreground dark:text-gray-100
                 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both"
               >
-                What started as a small family operation has grown into one of Dublin&apos;s most
-                trusted names in suspended ceiling installation and partition systems. Over the
-                years, the tools have changed but the standard hasn&apos;t — we still measure twice,
-                cut once, and finish every job like it&apos;s our own home.
+                Five Star Property Maintenance was built on a simple idea: do the job properly,
+                leave the site clean, and treat every customer the way you&apos;d want to be
+                treated. That standard hasn&apos;t changed — we still measure twice, cut once, and
+                finish every ceiling as if it were going into our own home.
               </p>
 
               <p
@@ -149,17 +148,17 @@ export default function AboutPage() {
                 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-450 fill-mode-both"
               >
                 Today, we work with offices, retail spaces, healthcare facilities, schools and
-                residential developments across Dublin, Kildare, and the surrounding counties. From
-                a single-room ceiling to a full commercial fit-out, we bring the same attention to
-                detail and honest communication.
+                residential developments across Dublin, Kildare and the surrounding counties. From a
+                single-room suspended ceiling to a full commercial fit-out with partitions and fire
+                sealing, we bring the same attention to detail and honest communication.
               </p>
 
               <ul className="space-y-3 pt-2">
                 {[
                   "Free call-out, measure-up & quotation",
                   "Sample tiles shown on-site for confident decisions",
-                  "Fire sealing over suspended ceilings now available",
-                  "Fully insured with Safe Pass certified crew",
+                  "Fire-rated office partitions available",
+                  "Certified fire sealing over suspended ceilings",
                 ].map((item, i) => (
                   <li
                     key={item}
@@ -192,7 +191,6 @@ export default function AboutPage() {
 
             {/* Right — Image collage */}
             <div className="relative">
-              {/* Main image */}
               <div
                 className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-border
                 shadow-[0_25px_60px_-15px_rgba(10,41,70,0.35)]
@@ -200,7 +198,7 @@ export default function AboutPage() {
               >
                 <img
                   src="/assets/about-3.jpeg"
-                  alt="Five Start Property installing a suspended ceiling"
+                  alt="Five Star Property Maintenance installing a suspended ceiling"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A2946]/40 via-transparent to-transparent" />
@@ -217,9 +215,9 @@ export default function AboutPage() {
                     <Award className="h-6 w-6" />
                   </span>
                   <div>
-                    <p className="text-2xl font-black leading-none text-foreground">30+</p>
+                    <p className="text-2xl font-black leading-none text-foreground">5★</p>
                     <p className="mt-1 text-xs font-medium text-muted-foreground">
-                      Years Experience
+                      Quality Standard
                     </p>
                   </div>
                 </div>
@@ -278,16 +276,16 @@ export default function AboutPage() {
       </section>
 
       {/* ============ VIDEO FEATURE ============ */}
-      <VideoFeature
+      {/* <VideoFeature
         videoId="YOUR_YOUTUBE_VIDEO_ID"
         title='See the <span class="text-secondary">Work</span> Behind the Reputation'
-        description="A quick look at how Paddy Kehoe Suspended Ceilings approaches a project — from measure-up and sample tiles to the finished ceiling. Watch and see the standard our customers talk about."
+        description="A quick look at how Five Star Property Maintenance approaches a project — from measure-up and sample tiles to the finished ceiling. Watch and see the standard our customers talk about."
         testimonial="Excellent workmanship — clean finish, on time, no hassle."
-        trustLine="Fully insured · Fire safety certified · Dublin"
+        trustLine="Fully insured · Fire safety certified · Dublin & Kildare"
         ctaLabel="Get a Free Quote"
         ctaHref="/contact"
         phoneNumber="085 118 1111"
-      />
+      /> */}
 
       {/* ============ VALUES ============ */}
       <section className="relative overflow-hidden bg-muted/30 px-6 py-24">
@@ -301,7 +299,6 @@ export default function AboutPage() {
         />
 
         <div className="relative mx-auto max-w-6xl">
-          {/* Header */}
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-semibold tracking-wider text-[#0A2946] shadow-[0_0_20px_rgba(202,151,46,0.4)] ring-1 ring-secondary/60 animate-in fade-in slide-in-from-bottom-4 duration-700">
               ⭐ What We Stand For
@@ -314,7 +311,6 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Cards */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value, i) => {
               const Icon = value.icon;

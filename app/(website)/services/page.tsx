@@ -56,10 +56,10 @@ export default function ServicesPage() {
       {/* ============ HERO ============ */}
       <PageHero
         eyebrow="Our Services"
-        title='Ceiling &amp; Partition <span class="text-secondary">Services</span> in Dublin'
-        description="From a single office ceiling to a full commercial fit-out — every project starts with a free measure-up, sample tiles shown on-site, and a clear itemised quote."
+        title='Our Specialist Ceiling <span class="text-secondary">Services</span> in Dublin'
+        description="Five Star Property Maintenance specialise in suspended ceiling installation, plasterboard ceilings and commercial ceiling repairs across Dublin and Ireland. We also install fire-rated office partitions and provide certified fire sealing — every project starts with a free measure-up, sample tiles shown on-site, and a clear itemised quote."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
-        image="/assets/pic1.jpg"
+        image="/assets/pic12.jpg"
         ctaLabel="Get a Free Quote"
         ctaHref="/contact"
         secondaryCtaLabel="Talk to Our Team"

@@ -40,7 +40,7 @@ interface WhyChooseUsProps {
 }
 
 // ------------------------------------------------------------------
-// Default features — ceiling business
+// Default features
 // ------------------------------------------------------------------
 const defaultFeatures: Feature[] = [
   {
@@ -70,7 +70,7 @@ const defaultFeatures: Feature[] = [
 ];
 
 // ------------------------------------------------------------------
-// Default trust badges — no image files needed
+// Default trust badges
 // ------------------------------------------------------------------
 const defaultBadges: TrustBadge[] = [
   { icon: HardHat, label: "Safe Pass" },
@@ -122,11 +122,11 @@ export function WhyChooseUsSection({
             className="text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl
             animate-in fade-in slide-in-from-bottom-6 duration-700 delay-150 fill-mode-both"
           >
-            Why Choose <span className="text-secondary">Paddy Kehoe</span> Suspended Ceilings
+            Why Choose <span className="text-secondary">Five Star</span> Property Maintenance
           </h2>
           <p
             className="mt-4 text-base text-muted-foreground dark:text-gray-100 md:text-lg
-  animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both"
+            animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both"
           >
             {description}
           </p>
@@ -181,7 +181,7 @@ export function WhyChooseUsSection({
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="text-sm leading-relaxed text-muted-foreground dark:text-gray-300">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -195,7 +195,7 @@ export function WhyChooseUsSection({
           className="pt-10 border-t border-border animate-in fade-in slide-in-from-bottom-4 duration-700"
           style={{ animationDelay: "900ms", animationFillMode: "both" }}
         >
-          <h4 className="mb-8 text-center text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+          <h4 className="mb-8 text-center text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground dark:text-gray-300">
             Proudly Accredited &amp; Certified
           </h4>
 

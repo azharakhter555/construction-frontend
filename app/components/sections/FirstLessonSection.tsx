@@ -41,7 +41,7 @@ const defaultSectors: Sector[] = [
     icon: Stethoscope,
     title: "Healthcare & Clinics",
     description:
-      "Specialist ceiling and partition systems for hospitals, clinics, dental practices and care facilities with strict hygiene and acoustic requirements.",
+      "Specialist ceiling systems for hospitals, clinics, dental practices and care facilities with strict hygiene and acoustic requirements.",
   },
   {
     icon: GraduationCap,
@@ -53,13 +53,13 @@ const defaultSectors: Sector[] = [
     icon: Warehouse,
     title: "Industrial & Warehousing",
     description:
-      "Robust ceiling and partition systems for warehouses, factories and industrial facilities, engineered for durability, safety and full compliance.",
+      "Robust ceiling systems for warehouses, factories and industrial facilities, engineered for durability, safety and full compliance.",
   },
   {
     icon: Home,
     title: "Residential & Apartments",
     description:
-      "Fire-rated ceiling and partition solutions for apartments, multi-unit developments and residential fit-outs, finished to a professional standard.",
+      "Fire-rated ceiling solutions for apartments, multi-unit developments and residential fit-outs, finished to a professional standard.",
   },
 ];
 
@@ -69,7 +69,7 @@ const defaultSectors: Sector[] = [
 export function SectorsSection({
   heading = "Sectors We Work In",
   subheading = "Where we work",
-  description = "Paddy Kehoe Suspended Ceilings delivers ceiling and partition solutions across a wide range of commercial sectors throughout Dublin, Kildare and Ireland.",
+  description = "Five Star Property Maintenance delivers suspended ceiling and partition solutions across a wide range of commercial sectors throughout Dublin, Kildare and Ireland.",
   sectors = defaultSectors,
   className,
 }: SectorsSectionProps) {
@@ -118,7 +118,7 @@ export function SectorsSection({
             {heading}
           </h2>
           <p
-            className="mt-4 text-base text-white/75 md:text-lg
+            className="mt-4 text-base text-white/80 md:text-lg
             animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 fill-mode-both"
           >
             {description}
@@ -163,7 +163,7 @@ export function SectorsSection({
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm leading-relaxed text-white/70">{sector.description}</p>
+                <p className="text-sm leading-relaxed text-white/80">{sector.description}</p>
 
                 {/* Corner index number */}
                 <span className="pointer-events-none absolute bottom-4 right-5 text-4xl font-black text-white/[0.06] transition-colors duration-500 group-hover:text-secondary/20">

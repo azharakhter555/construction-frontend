@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // lib/constants.ts
 
 export const SERVICES = [
@@ -52,57 +53,63 @@ export interface ServiceWITHIMAGETYPE {
   icon?: string;
 }
 
+// lib/constants.ts
 export const SERVICESWITHIMAGE: any[] = [
-  {
-    href: "/services/office-partitions",
-    label: "Office Partitions",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop&q=80",
-    icon: "fa-door-open",
-    description:
-      "Premium fire-rated and acoustic partition systems for Dublin offices. Expert design and installation of metal stud and drywall partitions that optimise workspace layout, privacy and performance.",
-  },
   {
     href: "/services/suspended-ceilings",
     label: "Suspended Ceilings",
+    tagline: "Suspended Ceilings in Dublin",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop&q=80",
     icon: "fa-layer-group",
     description:
-      "Professional suspended ceiling installation across Dublin and Ireland. From standard grid systems to bespoke plasterboard and feature ceilings with integrated lighting and acoustic performance.",
+      "Professional suspended ceiling installation across Dublin and Ireland. From standard grid systems to bespoke feature ceilings with integrated lighting and acoustic performance.",
   },
   {
-    href: "/services/shop-ceiling-installation",
-    label: "Shop Ceiling Installation",
-    image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&h=400&fit=crop&q=80",
-    icon: "fa-store",
+    href: "/services/plasterboard-ceilings",
+    label: "Plasterboard Ceilings",
+    tagline: "Plasterboard Ceilings in Dublin",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop&q=80",
+    icon: "fa-th-large",
     description:
-      "Specialist ceiling solutions for retail environments. Suspended and plasterboard ceilings that enhance customer experience, improve acoustics and allow flexible lighting and signage layouts.",
+      "Bespoke plasterboard and feature ceilings designed and finished to a professional standard. Clean lines, seamless finishes and full integration with lighting and services.",
   },
   {
     href: "/services/commercial-ceiling-repairs",
     label: "Commercial Ceiling Repairs",
+    tagline: "Commercial Ceiling Repairs in Dublin",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop&q=80",
     icon: "fa-tools",
     description:
       "Fast, reliable commercial ceiling repairs for Dublin businesses. We replace damaged tiles, repair grids and make safe water-damaged ceilings with minimal disruption to your operations.",
   },
   {
+    href: "/services/shop-ceiling-installation",
+    label: "Shop Ceiling Installation",
+    tagline: "Shop Ceiling Installation in Dublin",
+    image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&h=400&fit=crop&q=80",
+    icon: "fa-store",
+    description:
+      "Specialist ceiling solutions for retail environments. Suspended and plasterboard ceilings that enhance customer experience, improve acoustics and allow flexible lighting and signage layouts.",
+  },
+  {
+    href: "/services/office-partitions",
+    label: "Partition Services",
+    tagline: "Partition Services in Dublin",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop&q=80",
+    icon: "fa-door-open",
+    description:
+      "Premium fire-rated and acoustic partition systems for Dublin offices. Expert design and installation of metal stud and drywall partitions that optimise workspace layout, privacy and performance.",
+  },
+  {
     href: "/services/fire-sealing",
     label: "Fire Sealing",
+    tagline: "Fire Sealing in Dublin",
     image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop&q=80",
     icon: "fa-fire-extinguisher",
     description:
       "Certified fire sealing over suspended ceilings. Protect your commercial space and stay compliant with all building and fire safety regulations.",
   },
-  {
-    href: "/services/plasterboard-ceilings",
-    label: "Plasterboard Ceilings",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop&q=80",
-    icon: "fa-th-large",
-    description:
-      "Bespoke plasterboard and feature ceilings designed and finished to a professional standard. Clean lines, seamless finishes and full integration with lighting and services.",
-  },
 ];
-
 export const SCHOLINFO = {
   name: "National Driving School",
   logo: "/assets/logo.png", // or a URL

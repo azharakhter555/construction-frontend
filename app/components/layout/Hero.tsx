@@ -60,24 +60,23 @@ export function Hero() {
         <div
           ref={bgRef}
           className="absolute inset-x-0 -top-[20%] h-[140%] bg-cover bg-center bg-no-repeat will-change-transform"
-          style={{ backgroundImage: "url('/assets/pic1.jpg')" }}
+          style={{ backgroundImage: "url('/assets/pic13.jpg')" }}
         />
       </div>
 
       {/* ===== DIRECTIONAL OVERLAY ===== */}
-      {/* Dark on the LEFT (behind the text) → clear on the RIGHT (image shows through) */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(30deg, rgba(10,41,70,0.92) 0%, rgba(10,41,70,0.75) 50%, rgba(10,41,70,0.35) 10%, rgba(10,41,70,0.05) 100%)",
+            "linear-gradient(90deg, rgba(10,41,70,0.94) 0%, rgba(10,41,70,0.82) 35%, rgba(10,41,70,0.45) 70%, rgba(10,41,70,0.15) 100%)",
         }}
       />
 
-      {/* Light overall wash — keeps highlights from blowing out on bright images */}
+      {/* Light overall wash */}
       <div className="absolute inset-0 bg-[#0A2946]/10" />
 
-      {/* Golden ambient glow — animated subtly on scroll */}
+      {/* Golden ambient glow */}
       <div
         ref={glowRef}
         aria-hidden
@@ -89,20 +88,20 @@ export function Hero() {
         ref={contentRef}
         className="relative z-10 flex flex-col items-start justify-center h-full min-h-[90vh] px-6 md:px-12 max-w-4xl mx-auto will-change-transform"
       >
-        {/* Badge — entrance */}
+        {/* Badge */}
         <span
           className="inline-flex items-center gap-2 px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-[#0A2946] bg-secondary rounded-full
           shadow-[0_0_20px_rgba(202,151,46,0.55),0_4px_14px_rgba(0,0,0,0.25)]
           ring-1 ring-secondary/60
           animate-in fade-in slide-in-from-bottom-4 duration-700"
         >
-          ⭐ Dublin&apos;s Trusted Property Maintenance Specialists
+          ⭐ Dublin&apos;s Trusted Ceiling Specialists
         </span>
 
-        {/* H1 — entrance, staggered by line */}
+        {/* H1 — ceiling only */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
           <span className="inline-block animate-in fade-in slide-in-from-bottom-6 duration-700 delay-150 fill-mode-both">
-            Property Maintenance &
+            Suspended Ceiling
           </span>{" "}
           <span className="inline-block text-secondary animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300 fill-mode-both">
             Installation
@@ -116,10 +115,10 @@ export function Hero() {
           className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl
           animate-in fade-in slide-in-from-bottom-4 duration-700 delay-[650ms] fill-mode-both"
         >
-          Five Start Property Maintenance are known for their excellent workmanship. We call out,
+          Five Star Property Maintenance are known for their excellent workmanship. We call out,
           measure up, quote, and show sample tiles to make your decision an easy one.{" "}
           <span className="font-semibold text-secondary">
-            Fire sealing over suspended ceilings now available.
+            Office partitions & fire sealing over suspended ceilings now available.
           </span>
         </p>
 
@@ -127,7 +126,7 @@ export function Hero() {
           {[
             "Free call-out, measure-up & quotation",
             "Sample tiles shown on-site",
-            "Fire sealing now available",
+            "Office partitions & fire sealing available",
           ].map((text, i) => (
             <li
               key={text}

@@ -15,7 +15,7 @@ export interface FaqItem {
 export interface FAQSectionProps {
   heading?: string;
   subheading?: string;
-  faqs?: FaqItem[];
+  faqs?: FaqItem[]; // ← already there
   variant?: "light" | "muted";
   className?: string;
 }
